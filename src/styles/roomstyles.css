@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* first section styles (affiche rooms) */
+main section div.rooms-affiche{
+    background: url(../../resources/images/rooms-img/roomaf.png) center/cover;
+    height:13cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #fff;
+    
+}
+main section div.rooms-affiche div.logotitle h1{
+    font-size: 90px;
+    /* background: #fff; */
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 3px 3px 3px 3px #000;
+}
+main section div.rooms-affiche div.linesdeco{
+    display: flex;
+    gap: 180px;
+    width: 100%;
+    justify-content: center;
+}
+main section div.rooms-affiche div.linesdeco div.leftline,div.rightline{
+    height: 1px;
+    background: #fff;
+    width: 28%;
+}
+main section div.rooms-affiche div.pagetitle h2{
+    font-family: serif;
+    font-size: 90px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/* second section */
+main section div.rooms{
+    margin-top: 150px;
+}
+main section div.rooms div.roomstitle{
+    text-align: center;
+}
+main section div.rooms div.roomstitle h2{
+    font-size: 42px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+main section div.rooms div.roomstitle p{
+    color: #585454;
+}
+main section div.rooms  div.roomsections {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 3cm ;
+    align-items: center;
+}
+main section div.rooms  div.roomsections section{
+    height: 450px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+main section div.rooms  div.roomsections section div.leftroominfo{
+    height: 100%;
+    width: 49%;
+}
+main section div.rooms  div.roomsections section div.rightroominfo{
+    background: #fff;
+    height: 100%;
+    width: 49%;
+    
+}
+main section div.rooms  div.roomsections section div div.roominfo{
+    width: 80%;
+    height: 80%;
+    margin: 5% auto;
+    color: #646363;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main section div.rooms  div.roomsections section div div.roominfo ul li{
+    text-transform: capitalize;
+}
+main section div.rooms  div.roomsections section div div.roominfo h3{
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 52px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+
+main section div.rooms  div.roomsections section div.roomImg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* mobile resolution css */
+@media (max-width: 768px){
+    /* affichage section */
+    main section div.rooms-affiche div.logotitle h1 {
+        font-size: 45px;
+        margin-top: 102px;
+    }
+    main section div.rooms-affiche div.pagetitle h2 {
+        font-size: 40px;
+    }
+
+    /* rooms styles */
+    main section div.rooms  div.roomsections section{
+        height: 100%;
+        width: 90%;
+        flex-wrap: unset;
+        flex-direction: column;
+        align-items: center;
+    }
+    main section div.roomsections section div.roomImg{
+        order: 1;
+    }
+    main section div.roomsections section div.roomdes{
+        order: 2;
+    }
+    
+    main section div.rooms div.roomsections section div.rightroominfo ,
+    main section div.rooms div.roomsections section div.leftroominfo,
+    main section div.rooms div.roomsections section div div.roominfo{
+        width: 100%;
+    }
+    main section div.rooms div.roomsections section div div.roominfo h3 {
+        margin: 0;
+        margin-bottom: 0;
+    }
+    main section div.rooms div.roomsections section div div.roominfo div{
+        margin-top: 15px;
+    }
+
+}
+@media (max-width: 1350px) and (min-width: 769px){
+    main section div.rooms div.roomsections section div.roomImg img {
+        height: 340px;
+    } 
+    main section div.rooms div.roomsections section div div.roominfo {
+        height: 100%;
+    }
+    main section div.rooms div.roomsections {
+        gap: 100px;
+    }
+    main section div.rooms div.roomsections section {
+        height: initial;
+    }
+}
